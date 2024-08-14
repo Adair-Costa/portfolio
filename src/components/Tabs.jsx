@@ -19,16 +19,22 @@ function Tabs() {
         >
             <Button onClick={handleWebDev} className="cursor-pointer">
                 <span
-                    className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 font-body font-semibold ${darkModeActive ? 'text-backgroundColorLight' : 'text-colorDark'} ${activeTab === 'webDev' ? `${darkModeActive ? 'bg-colorLight text-backgroundColorLight' : 'text-colorDefault bg-colorDark'}` : `${darkModeActive ? 'text-colorLight' : ''}`}`}
+                    className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 font-body font-semibold ${darkModeActive ? 'text-backgroundColorLight' : 'text-colorDark'} ${activeTab === 'webDev' ? `${darkModeActive ? 'bg-colorLight text-backgroundColorLight' : 'bg-colorDark text-colorDefault'}` : `${darkModeActive ? 'text-colorLight' : ''}`}`}
                 >
-                    Web development
+                    Web{' '}
+                    <span className="sm:hidden md:inline-block">
+                        development
+                    </span>
                 </span>
             </Button>
             <Button onClick={handleMobileDev} className="cursor-pointer">
                 <span
-                    className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 font-body font-semibold ${darkModeActive ? 'text-backgroundColorLight' : 'text-colorDark'} ${activeTab === 'mobDev' ? `${darkModeActive ? 'bg-colorLight text-backgroundColorLight' : 'text-colorDefault bg-colorDark'}` : `${darkModeActive ? 'text-colorLight' : ''}`}`}
+                    className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 font-body font-semibold ${darkModeActive ? 'text-backgroundColorLight' : 'text-colorDark'} ${activeTab === 'mobDev' ? `${darkModeActive ? 'bg-colorLight text-backgroundColorLight' : 'bg-colorDark text-colorDefault'}` : `${darkModeActive ? 'text-colorLight' : ''}`}`}
                 >
-                    Mobile development
+                    Mobile{' '}
+                    <span className="sm:hidden md:inline-block">
+                        development
+                    </span>
                 </span>
             </Button>
         </div>
